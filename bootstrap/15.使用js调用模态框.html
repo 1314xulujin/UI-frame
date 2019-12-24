@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--快捷键  meta:compat  +  Tab 键  -->
+    <!--设置浏览器以当前最新的内核渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>BootStrap框架使用模板</title>
+    <!--1.引入bootstrap css文件-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--2.引入自己写的css 文件-->
+
+    <!--5.引入兼容IE9以下浏览器对H5新标签支持-->
+    <!--6.引入低版本浏览器对媒体查询的兼容性插件-->
+    <!--[if lt IE 9]>
+
+    <script src="js/html5.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h2>BootStrap框架 - 模态框</h2>
+    </div>
+
+    <button class="btn btn-primary">打开模态框1</button>
+    <button class="btn btn-primary">打开模态框2</button>
+    <button class="btn btn-primary">打开模态框3</button>
+    <button class="btn btn-primary">打开模态框4</button>
+    <button class="btn btn-primary">打开模态框5</button>
+    <button class="btn btn-primary">打开模态框6</button>
+
+    <!--定义一个模态框-->
+    <div class="modal fade" id="myModal" tabindex="-1">
+        <!--对话框形式的的modal , 此处可以设置大小 .modal-lg / .modal-sm -->
+        <div class="modal-dialog">
+            <!--模态框的内容-->
+            <div class="modal-content">
+                <!--模态框的头部-->
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4>这是模态框的标题</h4>
+                </div>
+                <!--模态框的正文-->
+                <div class="modal-body">
+                    <h1>这是模态框的正文</h1>
+                </div>
+                <!--模态框的底部-->
+                <div class="modal-footer">
+                    <button class="btn btn-success">更新</button>
+                    <button class="btn btn-danger" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--3.引入jQuery  bs框架的js插件依赖于jQuery -->
+<script src="js/jquery-v1.12.0.js"></script>
+<!--4.引入bs插件-->
+<script src="js/bootstrap.min.js"></script>
+<script>
+      $(".btn-primary").click(function(){
+          //调用模态框的插件
+          // $("#myModal").modal('show');
+          // $("#myModal").modal('hide');
+          var text = $(this).text();
+          $(".modal-body h1").html(text);
+          $("#myModal").modal({
+              backdrop:false,//去除灰色遮罩层
+              keyboard:true,//设置是否按ESC关闭
+              show:true,
+          })
+      })
+
+
+    //bs框架中针对于插件提供一些自定义事件机制
+    // $("#myModal").on('show.bs.modal',function(){
+    //     alert('模态框即将要显示出来了!');
+    // })
+    //
+    //   $("#myModal").on('shown.bs.modal',function(){
+    //       alert('模态框即显示完毕!');
+    //   })
+    //
+    //   $("#myModal").on('hide.bs.modal',function(){
+    //       alert('模态框即将要隐藏了!');
+    //   })
+    //
+    //   $("#myModal").on('hidden.bs.modal',function(){
+    //       alert('模态框隐藏完毕了!');
+    //   })
+</script>
+</body>
+</html>

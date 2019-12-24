@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>BootStrap框架使用模板</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .row  div{
+            outline: 1px solid red;
+        }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="js/html5.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h2>BootStrap 全局样式</h2>
+        </div>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="exampleInputName2">Name</label>
+                <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail2">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+            </div>
+            <button type="submit" class="btn btn-default">Send invitation</button>
+        </form>
+        <hr>
+        <form action="" class="form-horizontal col-md-offset-3">
+            <div class="clearfix form-group has-success has-feedback">
+                <label class="col-md-2 text-right control-label">账号:</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control">
+                    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="clearfix form-group has-error has-feedback">
+                <label class="col-md-2 text-right control-label">密码:</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control">
+                    <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="clearfix form-group has-warning has-feedback">
+                <label class="col-md-2 text-right control-label">确认密码:</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control">
+                    <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="clearfix form-group">
+                <label class="col-md-2 text-right control-label">性别:</label>
+                <div class="col-md-4">
+                    <input type="radio" name="sex">男
+                    <input type="radio" name="sex">女
+                </div>
+            </div>
+            <div class="clearfix form-group">
+                <label class="col-md-2 text-right control-label">城市:</label>
+                <div class="col-md-4">
+                    <select name="" id="" class="form-control">
+                        <option value="">北京</option>
+                        <option value="">北京</option>
+                        <option value="">北京</option>
+                        <option value="">北京</option>
+                    </select>
+                </div>
+            </div>
+            <div class="clearfix form-group">
+                <label class="col-md-2 text-right control-label">备注:</label>
+                <div class="col-md-4">
+                    <textarea name="" class="form-control" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </form>
+        <hr>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover table-striped">
+                <thead>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>CLASSNAME</th>
+                <th>ADDRESS</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1撒飒飒大时代</td>
+                    <td>张三asdasdsasad阿达的萨达是的sad撒大大大撒阿萨德的飒飒的</td>
+                    <td>WT1撒的飒飒的飒飒的撒的撒的撒8</td>
+                    <td>广东阿瑟的撒多撒多撒奥所撒大撒所撒大所大多撒所多撒多阿萨德撒撒大大深圳</td>
+                </tr>
+                <tr>
+                    <td>1撒飒飒大时代</td>
+                    <td>张三asdasdsasad阿达的萨达是的sad撒大大大撒阿萨德的飒飒的</td>
+                    <td>WT1撒的飒飒的飒飒的撒的撒的撒8</td>
+                    <td>广东阿瑟的撒多撒多撒奥所撒大撒所撒大所大多撒所多撒多阿萨德撒撒大大深圳</td>
+                </tr>
+                <tr>
+                    <td>1撒飒飒大时代</td>
+                    <td>张三asdasdsasad阿达的萨达是的sad撒大大大撒阿萨德的飒飒的</td>
+                    <td>WT1撒的飒飒的飒飒的撒的撒的撒8</td>
+                    <td>广东阿瑟的撒多撒多撒奥所撒大撒所撒大所大多撒所多撒多阿萨德撒撒大大深圳</td>
+                </tr>
+                <tr>
+                    <td>1撒飒飒大时代</td>
+                    <td>张三asdasdsasad阿达的萨达是的sad撒大大大撒阿萨德的飒飒的</td>
+                    <td>WT1撒的飒飒的飒飒的撒的撒的撒8</td>
+                    <td>广东阿瑟的撒多撒多撒奥所撒大撒所撒大所大多撒所多撒多阿萨德撒撒大大深圳</td>
+                </tr>
+                <tr>
+                    <td>1撒飒飒大时代</td>
+                    <td>张三asdasdsasad阿达的萨达是的sad撒大大大撒阿萨德的飒飒的</td>
+                    <td>WT1撒的飒飒的飒飒的撒的撒的撒8</td>
+                    <td>广东阿瑟的撒多撒多撒奥所撒大撒所撒大所大多撒所多撒多阿萨德撒撒大大深圳</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <table class="table table-bordered table-hover table-striped table-condensed">
+            <thead>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>CLASSNAME</th>
+            <th>ADDRESS</th>
+            </thead>
+            <tbody>
+                <tr class="active">
+                    <td>1</td>
+                    <td>张三</td>
+                    <td>WT18</td>
+                    <td>广东深圳</td>
+                </tr>
+                <tr class="success">
+                    <td>1</td>
+                    <td>张三</td>
+                    <td>WT18</td>
+                    <td>广东深圳</td>
+                </tr>
+                <tr class="danger">
+                    <td>1</td>
+                    <td>张三</td>
+                    <td>WT18</td>
+                    <td>广东深圳</td>
+                </tr>
+                <tr class="warning">
+                    <td>1</td>
+                    <td>张三</td>
+                    <td>WT18</td>
+                    <td>广东深圳</td>
+                </tr>
+                <tr class="info">
+                    <td>1</td>
+                    <td>张三</td>
+                    <td>WT18</td>
+                    <td>广东深圳</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <samp>This text is meant to be treated as sample output from a computer program.</samp>
+        <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+        <pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+        To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+        To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+        <dl class="dl-horizontal">
+            <dt>收件人:</dt>
+            <dd>张三</dd>
+            <dt>手机:</dt>
+            <dd>13800138000</dd>
+            <dt>地址:</dt>
+            <dd>广东省深圳市福田区</dd>
+        </dl>
+        <hr>
+        <ul class="list-inline">
+            <li>这是列表项内容1</li>
+            <li>这是列表项内容2</li>
+            <li>这是列表项内容3</li>
+            <li>这是列表项内容4</li>
+            <li>这是列表项内容5</li>
+        </ul>
+        <ul class="list-unstyled">
+            <li>这是列表项内容1</li>
+            <li>这是列表项内容2</li>
+            <li>这是列表项内容3</li>
+            <li>这是列表项内容4</li>
+            <li>这是列表项内容5</li>
+        </ul>
+        <hr>
+        <blockquote class="blockquote-reverse">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+
+        <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </blockquote>
+
+        <p class="bg-primary">这是北京色阿瑟的撒啥的的萨达撒撒旦撒旦撒旦</p>
+        <p class="bg-success">这是北京色阿瑟的撒啥的的萨达撒撒旦撒旦撒旦</p>
+        <p class="bg-info">这是北京色阿瑟的撒啥的的萨达撒撒旦撒旦撒旦</p>
+        <p class="bg-warning">这是北京色阿瑟的撒啥的的萨达撒撒旦撒旦撒旦</p>
+        <p class="bg-danger">这是北京色阿瑟的撒啥的的萨达撒撒旦撒旦撒旦</p>
+
+        <hr>
+        <p class="text-primary">爱仕达撒撒撒多撒多撒多撒大所多撒多撒多撒多撒多</p>
+        <p class="text-info">爱仕达撒撒撒多撒多撒多撒大所多撒多撒多撒多撒多</p>
+        <p class="text-success">爱仕达撒撒撒多撒多撒多撒大所多撒多撒多撒多撒多</p>
+        <p class="text-danger">爱仕达撒撒撒多撒多撒多撒大所多撒多撒多撒多撒多</p>
+        <p class="text-warning">爱仕达撒撒撒多撒多撒多撒大所多撒多撒多撒多撒多</p>
+        <hr>
+        <p class="text-lowercase">Lowercased text.</p>
+        <p class="text-uppercase">Uppercased text.</p>
+        <p class="text-capitalize">Capitalized text.</p>
+
+        <p class="text-left">Left aligned text.</p>
+        <p class="text-center">Center aligned text.</p>
+        <p class="text-right">Right aligned text.</p>
+        <p class="text-justify">Justified text.</p>
+        <p class="text-nowrap">No wrap text.</p>
+        <hr>
+        <u>This line of text will render as underlined</u>
+        <ins>This line of text is meant to be treated as an addition to the document.</ins>
+        <s>This line of text is meant to be treated as no longer accurate.</s>
+        <del>This line of text is meant to be treated as deleted text.</del>
+        You can use the mark tag to <mark>highlight</mark> text.
+        <h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+        <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+        <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+        <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+        <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+        <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+        <hr>
+        <h1>这是h1标题</h1>
+        <h2>这是h2标题</h2>
+        <h3>这是h3标题</h3><h4>这是h4标题</h4><h5>这是h5标题</h5><h6>这是h6标题</h6>
+        <hr>
+        <div class="row">
+            <div class="col-md-1">1</div>
+            <div class="col-md-1">2</div>
+            <div class="col-md-1">3</div>
+            <div class="col-md-1">4</div>
+            <div class="col-md-1">5</div>
+            <div class="col-md-1">6</div>
+            <div class="col-md-1">7</div>
+            <div class="col-md-1">8</div>
+            <div class="col-md-1">9</div>
+            <div class="col-md-1">10</div>
+            <div class="col-md-1">11</div>
+            <div class="col-md-1">12</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">2</div>
+            <div class="col-md-3">3</div>
+            <div class="col-md-5">5</div>
+            <div class="col-md-2">2</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-md-6">6</div>
+            </div>
+            <div class="col-md-6">5</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-md-2 col-sm-4 col-xs-6">123</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-push-9">3</div>
+            <div class="col-md-9 col-md-pull-3">9</div>
+        </div>
+    </div>
+<script src="js/jquery-v1.12.0.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

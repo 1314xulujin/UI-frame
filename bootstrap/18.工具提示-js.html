@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--快捷键  meta:compat  +  Tab 键  -->
+    <!--设置浏览器以当前最新的内核渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>BootStrap框架使用模板</title>
+    <!--1.引入bootstrap css文件-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--2.引入自己写的css 文件-->
+
+    <!--5.引入兼容IE9以下浏览器对H5新标签支持-->
+    <!--6.引入低版本浏览器对媒体查询的兼容性插件-->
+    <!--[if lt IE 9]>
+
+    <script src="js/html5.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h2>BootStrap框架 - </h2>
+    </div>
+    <div class="btn-group">
+        <button class="btn btn-success">按钮</button>
+        <button class="btn btn-primary">按钮</button>
+        <button class="btn btn-primary">按钮</button>
+    </div>
+</div>
+<!--3.引入jQuery  bs框架的js插件依赖于jQuery -->
+<script src="js/jquery-v1.12.0.js"></script>
+<!--4.引入bs插件-->
+<script src="js/bootstrap.min.js"></script>
+<script>
+    //初始化
+    $(document).tooltip({
+        title:"<h1>提示的内容!!!!</h1>",//提示的内容
+        // placement:"right",//提示的方向 sting / function
+        placement:function(){
+            var dir = ['top','left','right','bottom'];
+            return dir[parseInt(Math.random()*dir.length)];
+        },
+        html:true,//提示内容是否允许为html内容
+        // delay:2000,//设置显示 / 隐藏的延迟时间
+        delay:{
+            show:300,
+            hide:300
+        },
+        animation:false,//是否具有动画过渡效果
+        template:`<div class="abc" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>`,//设置显示提示框的内容模板
+        trigger:'hover',//设置触发方式 , click / hover / focus
+        selector:".btn-primary",//给匹配的选择器元素绑定工具提示
+        container:"body",//指定生成提示.tooltip 元素的插入位置
+    })
+</script>
+</body>
+</html>

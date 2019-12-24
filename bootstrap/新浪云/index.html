@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--快捷键  meta:compat  +  Tab 键  -->
+    <!--设置浏览器以当前最新的内核渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>新浪云SAE</title>
+    <!--1.引入bootstrap css文件-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--2.引入自己写的css 文件-->
+    <style>
+        .navbar{
+            background: #148CCA;
+        }
+        #myNav a{
+           color: #fff;
+            font-weight: bold;
+        }
+        .navbar-default .navbar-toggle{
+            border: none;
+        }
+
+        .navbar-default .navbar-toggle .icon-bar{
+            background: #fff;
+        }
+        .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+            background: none;
+        }
+
+        @media (max-width: 767px) {
+            #login{
+                position: absolute;
+                top: 15px;
+                left: 45%;
+            }
+
+            .con h2{
+                font-size: 20px;
+            }
+        }
+
+        .banner img{
+            display: block;
+            width: 100%;
+        }
+
+        .con{
+            margin: 20px auto;
+        }
+
+        .con h3{
+            color: #2AAAEC;
+        }
+    </style>
+    <!--5.引入兼容IE9以下浏览器对H5新标签支持-->
+    <!--6.引入低版本浏览器对媒体查询的兼容性插件-->
+    <!--[if lt IE 9]>
+
+    <script src="js/html5.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="padding-top: 50px;">
+    <!--导航条    -->
+    <header class="navbar navbar-fixed-top navbar-default" id="myNav">
+        <div class="container">
+            <div class="navbar-header">
+                <a href=""><img src="img/logo.png" alt=""></a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-left">
+                <ul class="navbar-nav nav">
+                    <li><a href="">首页</a></li>
+                    <li><a href="">产品</a></li>
+                    <li><a href="">支持中心</a></li>
+                    <li><a href="">价格</a></li>
+                    <li><a href="">成功案例</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-right" id="login">
+                <a href="" class="navbar-text"> 微博登录</a>
+                <a class="navbar-text">
+                |</a>
+                <a href="" class="navbar-text">
+                微博注册</a>
+            </div>
+        </div>
+    </header>
+
+    <!--轮播图-->
+    <div class="banner">
+        <div class="carousel slide" id="myCarousel" data-ride="carousel" data-interval="1000">
+            <!--按钮-->
+            <ul class="carousel-indicators">
+                <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ul>
+            <!--图片-->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="img/4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--产品介绍-->
+    <div class="container con" id="product">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="img/cont1.png" alt="">
+                <h3>SAE</h3>
+                <p>云应用</p>
+            </div>
+            <div class="col-md-8">
+                <h2>应用开发、优化及运行的PaaS云计算平台</h2>
+                <p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需的众多服务，国内最好的PaaS云计算平台</p>
+                <ul class="col-md-6">
+                    <li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                    <li>沙箱技术隔离应用</li>
+                    <li>无需运维管理与架构设计</li>
+                </ul>
+                <ul class="col-md-6">
+                    <li>防火墙防止攻击</li>
+                    <li>99.95%SLA，首批可信云认证</li>
+                    <li>免费配额，零成本创业</li>
+                </ul>
+                <button class="btn btn-primary">了解详情</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center col-md-push-8">
+                <img src="img/cont2.png" alt="">
+                <h3>SAE</h3>
+                <p>云应用</p>
+            </div>
+            <div class="col-md-8 col-md-pull-4">
+                <h2>应用开发、优化及运行的PaaS云计算平台</h2>
+                <p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需的众多服务，国内最好的PaaS云计算平台</p>
+                <ul class="col-md-6">
+                    <li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                    <li>沙箱技术隔离应用</li>
+                    <li>无需运维管理与架构设计</li>
+                </ul>
+                <ul class="col-md-6">
+                    <li>防火墙防止攻击</li>
+                    <li>99.95%SLA，首批可信云认证</li>
+                    <li>免费配额，零成本创业</li>
+                </ul>
+                <button class="btn btn-primary">了解详情</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="img/cont3.png" alt="">
+                <h3>SAE</h3>
+                <p>云应用</p>
+            </div>
+            <div class="col-md-8">
+                <h2>应用开发、优化及运行的PaaS云计算平台</h2>
+                <p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需的众多服务，国内最好的PaaS云计算平台</p>
+                <ul class="col-md-6">
+                    <li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                    <li>沙箱技术隔离应用</li>
+                    <li>无需运维管理与架构设计</li>
+                </ul>
+                <ul class="col-md-6">
+                    <li>防火墙防止攻击</li>
+                    <li>99.95%SLA，首批可信云认证</li>
+                    <li>免费配额，零成本创业</li>
+                </ul>
+                <button class="btn btn-primary">了解详情</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center col-md-push-8">
+                <img src="img/cont4.png" alt="">
+                <h3>SAE</h3>
+                <p>云应用</p>
+            </div>
+            <div class="col-md-8 col-md-pull-4">
+                <h2>应用开发、优化及运行的PaaS云计算平台</h2>
+                <p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需的众多服务，国内最好的PaaS云计算平台</p>
+                <ul class="col-md-6">
+                    <li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                    <li>沙箱技术隔离应用</li>
+                    <li>无需运维管理与架构设计</li>
+                </ul>
+                <ul class="col-md-6">
+                    <li>防火墙防止攻击</li>
+                    <li>99.95%SLA，首批可信云认证</li>
+                    <li>免费配额，零成本创业</li>
+                </ul>
+                <button class="btn btn-primary">了解详情</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="img/cont5.png" alt="">
+                <h3>SAE</h3>
+                <p>云应用</p>
+            </div>
+            <div class="col-md-8">
+                <h2>应用开发、优化及运行的PaaS云计算平台</h2>
+                <p>国内第一家公有云计算平台，支持PHP、Java、Python语言，提供Web应用开发所需的众多服务，国内最好的PaaS云计算平台</p>
+                <ul class="col-md-6">
+                    <li>弹性扩展，负载均衡智能应对大数据处理请求</li>
+                    <li>沙箱技术隔离应用</li>
+                    <li>无需运维管理与架构设计</li>
+                </ul>
+                <ul class="col-md-6">
+                    <li>防火墙防止攻击</li>
+                    <li>99.95%SLA，首批可信云认证</li>
+                    <li>免费配额，零成本创业</li>
+                </ul>
+                <button class="btn btn-primary">了解详情</button>
+            </div>
+        </div>
+    </div>
+
+    <!--视频-->
+    <div class="container con">
+        <img src="img/video.png" class="img-responsive" alt="">
+    </div>
+
+    <!--产品特色-->
+    <div class="container con">
+        <h4>产品特色</h4>
+        <div class="row">
+            <div class="col-md-3 col-xs-6 text-center">
+                <img src="img/icon1.png" alt="">
+                <p>安全可靠</p>
+                <p class="text-left">多层防护，多级备份，24小时全方位监控，放心托管您的应用与网站。</p>
+            </div>
+            <div class="col-md-3 col-xs-6 text-center">
+                <img src="img/icon2.png" alt="">
+                <p>安全可靠</p>
+                <p class="text-left">多层防护，多级备份，24小时全方位监控，放心托管您的应用与网站。</p>
+            </div>
+            <div class="col-md-3 col-xs-6 text-center">
+                <img src="img/icon3.png" alt="">
+                <p>安全可靠</p>
+                <p class="text-left">多层防护，多级备份，24小时全方位监控，放心托管您的应用与网站。</p>
+            </div>
+            <div class="col-md-3 col-xs-6 text-center">
+                <img src="img/icon4.png" alt="">
+                <p>安全可靠</p>
+                <p class="text-left">多层防护，多级备份，24小时全方位监控，放心托管您的应用与网站。</p>
+            </div>
+        </div>
+    </div>
+<!--3.引入jQuery  bs框架的js插件依赖于jQuery -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<!--4.引入bs插件-->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

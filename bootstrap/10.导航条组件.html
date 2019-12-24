@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--快捷键  meta:compat  +  Tab 键  -->
+    <!--设置浏览器以当前最新的内核渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>BootStrap框架使用模板</title>
+    <!--1.引入bootstrap css文件-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--2.引入自己写的css 文件-->
+    <style>
+        @media (max-width: 767px) {
+            #myNav{
+                position: absolute;
+                top: 0;
+                left: 45%;
+            }
+            #myNav li{
+                float: left;
+            }
+        }
+    </style>
+    <!--5.引入兼容IE9以下浏览器对H5新标签支持-->
+    <!--6.引入低版本浏览器对媒体查询的兼容性插件-->
+    <!--[if lt IE 9]>
+
+    <script src="js/html5.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <!--logo & 汉堡按钮-->
+        <div class="navbar-header">
+            <a href=""><img src="imgs/logo.png" alt=""></a>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <!--导航-->
+       <div class="collapse navbar-collapse navbar-left">
+           <ul class="nav navbar-nav">
+               <li><a href="">首页</a></li>
+               <li><a href="">入门课</a></li>
+               <li><a href="">岗位课</a></li>
+               <li><a href="">技能库</a></li>
+               <li><a href="">微社区</a></li>
+               <li><a href="">学员 <span class="label label-danger">new</span></a></li>
+           </ul>
+       </div>
+
+        <!--搜索条-->
+        <form class="navbar-form navbar-right visible-lg">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="请输入搜索内容...">
+                <div class="input-group-btn">
+                    <button class="btn btn-success">搜索</button>
+                </div>
+            </div>
+        </form>
+
+        <!--登录 / 注册-->
+        <ul class="nav navbar-nav navbar-right" id="myNav">
+            <li><a href="">登录</a></li>
+            <li><a href="">注册</a></li>
+        </ul>
+    </div>
+</header>
+<!--3.引入jQuery  bs框架的js插件依赖于jQuery -->
+<script src="js/jquery-v1.12.0.js"></script>
+<!--4.引入bs插件-->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

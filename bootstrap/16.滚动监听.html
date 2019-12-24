@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--快捷键  meta:compat  +  Tab 键  -->
+    <!--设置浏览器以当前最新的内核渲染页面-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>BootStrap框架使用模板</title>
+    <!--1.引入bootstrap css文件-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--2.引入自己写的css 文件-->
+    <style>
+        .container .item{
+            border-bottom: 1px solid #ccc;
+            margin: 15px auto 20px;
+        }
+    </style>
+    <!--5.引入兼容IE9以下浏览器对H5新标签支持-->
+    <!--6.引入低版本浏览器对媒体查询的兼容性插件-->
+    <!--[if lt IE 9]>
+
+    <script src="js/html5.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style="position: relative;padding-top: 50px;" data-spy="scroll" data-offset="50">
+<header class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <ul class="navbar-nav nav">
+            <li class="active"><a href="#nav1">导航1</a></li>
+            <li><a href="#nav2">导航2</a></li>
+            <li><a href="#nav3">导航3</a></li>
+            <li><a href="#nav4">导航4</a></li>
+            <li><a href="#nav5">导航5</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="container">
+    <div class="item" id="nav1">
+        <img src="holder.js/1170x600?text=导航1" alt="">
+    </div>
+    <div class="item" id="nav2">
+        <img src="holder.js/1170x600?text=导航2" alt="">
+    </div>
+    <div class="item" id="nav3">
+        <img src="holder.js/1170x600?text=导航3" alt="">
+    </div>
+    <div class="item" id="nav4">
+        <img src="holder.js/1170x600?text=导航4" alt="">
+    </div>
+    <div class="item" id="nav5">
+        <img src="holder.js/1170x600?text=导航5" alt="">
+    </div>
+</div>
+
+<!--3.引入jQuery  bs框架的js插件依赖于jQuery -->
+<script src="js/jquery-v1.12.0.js"></script>
+<!--4.引入bs插件-->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/holder.min.js"></script>
+</body>
+</html>
